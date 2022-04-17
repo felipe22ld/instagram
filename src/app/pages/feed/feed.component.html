@@ -1,0 +1,61 @@
+<div class="nav">
+    <div class="logo">
+        <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="instagram">
+    </div>
+    <div class="icons">
+        <div class="icon"><img src="https://img.icons8.com/ios/50/000000/booking.png" /></div>
+        <div class="icon"><img src="https://img.icons8.com/ios/50/000000/chat--v1.png" /></div>
+        <div class="icon"><img src="https://img.icons8.com/fluency-systems-regular/48/000000/group-layouts.png" /></div>
+        <div class="icon"><img src="https://img.icons8.com/material-outlined/24/000000/compass.png" /></div>
+        <div class="icon"> <img src="https://img.icons8.com/material-outlined/24/000000/like--v1.png" /></div>
+    </div>
+</div>
+
+
+<div class="stories">
+    <div *ngFor="let storie of stories" class="storie"> <img [src]="storie.photo" alt=""> <span>{{storie.name}}</span> </div>
+    
+</div>
+
+<div class="feeds">
+
+    <div *ngFor="let feed of feeds" class="feed" >
+
+        <div class="profile">
+            <div class="photo">
+                <img [src]="feed.photo" alt="">
+            </div>
+
+            <div class="perfil">
+                <div class="usuario">
+                    <span>{{feed.name}}</span>
+                </div>
+                <div class="localizacao">
+                    <span>{{feed.localizacao}}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="post">
+            <img [src]="feed.post" alt="">
+        </div>
+
+        <div class="actions-feed">
+            <div class="action-rigth">
+                <div class="action">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/like--v1.png" />
+                </div>
+                <div class="action">
+                    <img src="https://img.icons8.com/ios/50/000000/chat--v1.png" />
+                </div>
+                <div class="action">
+                    <img src="https://img.icons8.com/ios/50/000000/send-letter--v1.png" />
+                </div>
+            </div>
+
+            <div class="action">
+                <img src="https://img.icons8.com/material-outlined/24/000000/create-new-child-post.png" />
+            </div>
+        </div>
+    </div>
+</div>
